@@ -4,11 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131</title>
+  <title>WDD 131 - Dynamic Web Fundamentals - Moisés Parra Lozano</title>
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals, Moisés Parra, Profile, About Me, HTML, CSS, Design and Development Home Page, BYU-Pathway, WDD-131">
+  <meta name="author" content="Moisés Parra Lozano">
+  <link rel="stylesheet" href="styles/base.css">
+  <script defer src="scripts/getdates.js"></script>
 </head>
 
 <body>
-  <h1>WDD 131 - Moisés</h1>
+  <header>
+    <h1>WDD 131 - Dynamic Web Fundamentals - <span>Moisés Parra Lozano</span></h1>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/moises-parra-lozano/" target="_blank">Linkedin</a></li>
+        <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41"
+            target="_blank">Scripture</a></li>
+        <li><a href="#" target="_blank">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="about">
+        <p>I'm Moisés Parra Lozano. I'm from Pachuca, Hidalgo, México. I'm a seller of natural supplements, but I want
+          to better my self reliance, so I signed up to BYUI. Before BYUI my
+          hobby was making stop motion animation. I remember that my last work is about the story of Coriantumr of the
+          Book of Mormon. It is only a short sequence, but the work to make it was really hard.
+        </p>
+        <img src="images/myPic01.webp" alt="">
+      </div>
+
+      <div class="about2">
+        <h2>Pachuca, México</h2>
+        <div class="country">
+          <div class="image-flag">
+            <img src="images/mexico_flag02.webp" alt="mexican flag">
+            <p>Official Flag of México</p>
+          </div>
+          <div class="info">
+            <p>Mexico is a multicultural country located in North America, known for its rich cultural heritage, diverse
+              landscapes, and flavorful cuisine. Mexico has a complex history
+              shaped by ancient civilizations like the Aztecs and Mayans, as well as Spanish colonization.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <div class="resources">
+        <ul>
+          <li><a href="https://laracasts.com/series/php-for-beginners/episodes/2">Laracasts</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript - Mozilla</a></li>
+          <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox Guide</a></li>
+          <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+          <li><a href="https://www.geeksforgeeks.org/">Geeksforgeeks</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Moisés Parra | México
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
 
 </body>
 
