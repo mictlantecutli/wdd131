@@ -99,10 +99,6 @@ h2 {
 /*Card 2*/
 .card:nth-child(2) {
   box-shadow: var(--box-shadow);
-
-
-
-
 }
 
 /*Card 1 - about section*/
@@ -146,7 +142,7 @@ div.about2 h2 {
 }
 
 .country .image-flag p {
-  color: #858591;
+  color: black;
 }
 
 /*Card 2*/
