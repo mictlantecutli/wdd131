@@ -1,0 +1,145 @@
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #F5F7Fa;
+}
+
+header {
+  margin: 20px auto;
+  background-color: #0d479a;
+  box-shadow: var(--box-shadow);
+
+}
+
+.container {
+  margin: auto;
+  padding: 0px 0px;
+}
+
+header .navbar {
+  display: block;
+  text-align: center;
+  min-height: 70px;
+  padding: 0px 0px;
+  border-bottom: 1px solid #0000001a;
+}
+
+header .navbar .title-hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+  padding: 0px 20px;
+  border-bottom: 1px solid #0000001a;
+  box-shadow: var(--box-shadow);
+}
+
+header .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+
+
+header .navbar .hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+header .navbar .hamburger.open>span {
+  display: none;
+}
+
+header .navbar .hamburger.open::before {
+  content: "❌";
+}
+
+header .nav-items {
+  background-color: #1157ba;
+  display: none;
+  list-style: none;
+  justify-content: space-between;
+}
+
+header .nav-items.open {
+  display: flex;
+  flex-direction: column;
+}
+
+
+header h1 {
+  font-size: 27px;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+
+header .nav-items li {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 3px;
+  font-weight: 600;
+
+}
+
+header .nav-items li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header .nav-items li:hover {
+  background-color: #093470;
+}
+
+
+main .container .temples h2 {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+
+}
+
+main .container .temples .images-temples {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+main .container .temples .images-temples img {
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+
+footer {
+  margin: 20px auto;
+  background-color: #0d479a;
+  color: #FFFFFF;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+  box-shadow: var(--box-shadow);
+}
+
+footer #lastModified {
+  color: yellow;
+}
