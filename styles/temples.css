@@ -122,12 +122,20 @@ main .container .temples h2 {
 
 }
 
+/*
 main .container .temples .images-temples {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: space-around;
 
+}*/
+
+main .container .temples .images-temples {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  place-items: center;
 }
 
 main .container .temples .images-temples img {

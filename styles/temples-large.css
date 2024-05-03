@@ -44,6 +44,11 @@
     display: flex;
   }
 
+  main .container .temples .images-temples {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  }
+
   main .container .temples .images-temples img {
     width: 300px;
   }
