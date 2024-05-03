@@ -142,7 +142,13 @@ main .container .temples .images-temples img {
   width: 400px;
   border-radius: 5px;
   box-shadow: var(--box-shadow);
+
 }
+
+main .container .temples .images-temples img:hover {
+  box-shadow: 0 0 50px #333;
+}
+
 
 footer {
   margin: 20px auto;
