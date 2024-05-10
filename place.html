@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W03 Assignment: Country or Place</title>
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals, JavaScript Syntax, Responsive Images, srcset, Art Direction, Responsive Images, Events, WDD-131, Grid, Responsive Web Page">
+  <meta name="author" content="Moisés Parra Lozano">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cinzel&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/place.css">
+  <link rel="stylesheet" href="./styles/place-large.css">
+  <script defer src="./scripts/place.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="title">
+        <h1>Pachuca, Hidalgo, Mexico</h1>
+      </div>
+    </div>
+  </header>
+  <div class="white"></div>
+  <div class="red"></div>
+
+  <main>
+    <div class="container">
+
+      <section class="hero">
+        <picture>
+          <source media="(max-width: 550px)" srcset="./images/small-image02.webp">
+          <img src="./images/large-image.webp" alt="Xantolo in Pachuca, Hidalgo" width="1000" height="300">
+        </picture>
+      </section>
+
+
+      <section class="data-holder">
+        <h2>Data</h2>
+        <div class="info-data">
+
+          <table class="table-info">
+            <tr>
+              <th class="title">Area:</th>
+              <td class="data">154 km2</td>
+            </tr>
+            <tr>
+              <th class="title">Population:</th>
+              <td class="data"> 314 331</td>
+            </tr>
+            <tr>
+              <th class="title">Capital:</th>
+              <td class="data">Pachuca</td>
+            </tr>
+            <tr>
+              <th class="title">Languages:</th>
+              <td class="data">Spanish | Nahuatl</td>
+            </tr>
+            <tr>
+              <th class="title">Currency:</th>
+              <td class="data">Peso</td>
+            </tr>
+            <tr>
+              <th class="title">Time Zone:</th>
+              <td class="data">UTC-6</td>
+            </tr>
+            <tr>
+              <th class="title">Calling Code:</th>
+              <td class="data">+52 771</td>
+            </tr>
+            <tr>
+              <th class="title">Internet TLD:</th>
+              <td class="data">.MX</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      <div class="division"></div>
+      <section class="weather-holder">
+        <h2>Weather</h2>
+        <img class="icon-weather" alt="icon of the sun" src="./images/weather.svg">
+        <div class="info-weather">
+          <table class="table-weather">
+            <tr>
+              <th class="title">Temperature:</th>
+              <td class="data">23&#176;C</td>
+            </tr>
+            <tr>
+              <th class="title">Conditions:</th>
+              <td class="data">Partly Cloudy</td>
+            </tr>
+            <tr>
+              <th class="title">Wind:</th>
+              <td class="data">6km/h</td>
+            </tr>
+            <tr>
+              <th class="title">Wind Chill:</th>
+              <td id="chill" class="data"></td>
+            </tr>
+
+
+
+
+          </table>
+
+        </div>
+
+      </section>
+    </div>
+  </main>
+  <div class="red"></div>
+  <div class="white"></div>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Moisés Parra | México</p>
+    <p id="lastModified"></p>
+  </footer>
+
+
+</body>
+
+</html>
