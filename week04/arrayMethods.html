@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods and Funcional Programming</title>
+
+</head>
+
+<body>
+  <h1>Functional Programming</h1>
+
+</body>
+<script>
+  //Using the array.filter() method, create an array named namesB with only those names from the name array that start with the character 'B'.
+  let names = ['Nancy', 'Blessing', 'Jorge', 'Svetlana', 'Bob'];
+
+  let namesB = names.filter(name => name.charAt(0) === 'B');
+  // const namesStartB = names.filter((name) => name[0] == 'B')
+
+  // Using the array.map() method, create a new array named namesLength that contains the length of each name in the names array. Expected output is [5, 8, 5, 8, 3].
+  const namesLength = names.map((name) => name.length)
+
+  //Using the names.reduce() method, create an expression that returns the average string length of the names in the names array. Expected output is 5.8.
+  const average01 = names.reduce((total, name) => total + name.length, 0) / names.length
+  //const average = namesLength.reduce((accum, current) => accum + current / names.length, 0)
+</script>
+
+</html>
