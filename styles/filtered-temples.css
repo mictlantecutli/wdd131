@@ -164,6 +164,12 @@ main .container .temples .templeCard .infoTemple .label {
 
 main .container .temples .templeCard ul {
   list-style: none;
+
+}
+
+main .container .temples .templeCard ul li {
+  min-height: 25px;
+
 }
 
 
@@ -183,7 +189,7 @@ main .container .temples .images-temples img:hover {
 
 
 footer {
-  min-height: 116px;
+
   margin: 20px auto;
   background-color: #0d479a;
   color: #FFFFFF;
@@ -191,6 +197,10 @@ footer {
   text-align: center;
   grid-column: 1 / 4;
   box-shadow: var(--box-shadow);
+}
+
+footer p {
+  min-height: 25px;
 }
 
 footer #lastModified {
