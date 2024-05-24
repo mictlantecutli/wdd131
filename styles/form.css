@@ -77,6 +77,15 @@ body {
   margin-right: 6px;
 }
 
+fieldset {
+  border: none;
+  margin-top: 1rem;
+}
+
+fieldset legend {
+  font-size: 14px;
+}
+
 /* stars */
 input[type="radio"] {
   display: none;
@@ -118,6 +127,7 @@ input[type="radio"] {
 
 .hint {
   font-style: italic;
+  font-size: 14px;
 }
 
 .hint02 {
