@@ -40,7 +40,7 @@ const products = [
 
 function createOptions(array) {
   const templateOptions = array.map((item) => {
-    return `<option value="${item.id}" required>${item.name}</option>`;
+    return `<option value="${item.id}">${item.name}</option>`;
   });
 
   const selectElement = document.querySelector("#productN");
