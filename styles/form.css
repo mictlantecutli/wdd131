@@ -1,0 +1,212 @@
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  --backgound-head-foot: rgb(97, 20, 170);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #F5F7Fa;
+}
+
+.container {
+  margin: 2rem;
+
+
+}
+
+.container main {
+  padding: 10px;
+
+}
+
+/*Header*/
+.container header {
+  background-color: var(--backgound-head-foot);
+  text-align: center;
+  color: white;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+}
+
+.container h1 {
+  font-family: "Miriam Libre", sans-serif;
+  font-size: 30px;
+  padding: 15px;
+}
+
+/*form styling*/
+.prf label {
+  display: block;
+  padding-top: 1rem;
+  color: #181819;
+  font-size: .9rem;
+}
+
+/*
+.prf div {
+  padding-top: 1rem;
+  padding-bottom: 0px;
+  color: #181819;
+}*/
+
+.prf input[type="text"],
+.prf select,
+.prf input[type="date"],
+.prf textarea {
+  display: block;
+  background-color: #eee;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+}
+
+.prf input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* stars */
+input[type="radio"] {
+  display: none;
+  position: relative;
+  caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+
+}
+
+.stars>label {
+  color: gold;
+  width: 30px;
+  height: 30px;
+  font-size: 2rem;
+  margin-left: 5px;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  caret-color: rgba(0, 0, 0, 0);
+  /* remove blinking cursor*/
+}
+
+.stars>label:hover {
+  color: #000;
+}
+
+.stars>label::before {
+  content: "\2606";
+}
+
+.stars input:checked~label::before {
+  content: "\2605";
+}
+
+.hint {
+  font-style: italic;
+}
+
+.hint02 {
+  color: blue;
+}
+
+.features label {
+  padding-top: 0px;
+}
+
+
+.prf input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(gold, rgb(198, 169, 2));
+  color: #000;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem 0 2rem 0;
+  box-shadow: 1px 1px 4px #999;
+  appearance: none;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+}
+
+.prf select:required,
+.prf input:required {
+  border-left: solid 8px red;
+}
+
+.prf select:required:valid,
+.prf input:required:valid {
+  border-left: solid 8px green;
+}
+
+/*FOOTER*/
+.container footer {
+  background-color: var(--backgound-head-foot);
+  text-align: center;
+  color: white;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+}
+
+footer .foot-cont {
+  padding: 15px;
+}
+
+footer .foot-cont p {
+  font-family: "Miriam Libre", sans-serif;
+}
+
+
+/*page review*/
+
+.reviewMessage {
+  height: 70vh;
+  padding: 20px;
+}
+
+.reviewMessage h2,
+.reviewMessage p {
+  text-align: center;
+}
+
+.reviewMessage p {
+  background-color: gold;
+  width: 200px;
+  margin: 0px auto;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.numVisits {
+  color: rgb(191, 144, 235);
+  font-size: 20px;
+}
+
+/*Large View*/
+@media (min-width: 39.5em) {
+  .container h1 {
+    font-size: 20px;
+  }
+
+  .reviewMessage p {
+    width: 400px;
+
+  }
+
+
+}
