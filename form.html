@@ -27,7 +27,7 @@
     <main>
       <form method="get" action="review.html" class="prf">
         <label>Product Name*<select name="productN" id="productN" required>
-            <option value="" disabled selected required>Select a Product...</option>
+            <option value="" disabled selected>Select a Product...</option>
           </select>
         </label>
 
@@ -45,9 +45,9 @@
         <label>Date of Installation*
           <input type="date" required>
         </label>
-        <label>Which features did you find useful in the product?
+        <label for="usefulProd">Which features did you find useful in the product?
           <span class="hint">(Check all that apply)</span>
-          <div class="features">
+          <div class="features" id="usefulProd">
             <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
             <label><input type="checkbox" id="easy" name="easy" value="yes">Easy of Use</label>
             <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
