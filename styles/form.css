@@ -20,13 +20,10 @@ body {
 
 .container {
   margin: 2rem;
-
-
 }
 
 .container main {
   padding: 10px;
-
 }
 
 /*Header*/
@@ -185,7 +182,7 @@ footer .foot-cont p {
 /*page review*/
 
 .reviewMessage {
-  height: 70vh;
+  min-height: 70vh;
   padding: 20px;
 }
 
@@ -215,7 +212,6 @@ footer .foot-cont p {
 
   .reviewMessage p {
     width: 400px;
-
   }
 
 
