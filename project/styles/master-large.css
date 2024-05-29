@@ -1,0 +1,44 @@
+@media (min-width: 39.5em) {
+
+  .container-header {
+    padding: 0px 10px;
+  }
+
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  header .nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+  }
+
+  header .nav-items li {
+    display: flex;
+  }
+
+  header .nav-items li a {
+    border-radius: 5px;
+    border-bottom: 0px;
+  }
+
+  header .navbar .title-hamburger {
+    box-shadow: none;
+  }
+
+  header .nav-items.open {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .navbar .hamburger {
+    display: none;
+  }
+
+
+}

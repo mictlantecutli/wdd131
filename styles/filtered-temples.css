@@ -1,6 +1,7 @@
 :root {
   --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   --yellow-color: rgb(242, 242, 132);
+
 }
 
 * {
@@ -9,7 +10,6 @@
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-
 }
 
 body {
