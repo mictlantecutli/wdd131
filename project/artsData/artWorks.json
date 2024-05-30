@@ -1,0 +1,72 @@
+[
+  {
+    "nameWork": "Desert Eyes",
+    "yearCreation": 2018,
+    "size": "12x16 inches",
+    "technique": "Oil",
+    "imageUrl": "./images/desertEyes.webp"
+  },
+  {
+    "nameWork": "The Canoe",
+    "yearCreation": 2015,
+    "size": "18x24 inches",
+    "technique": "Oil",
+    "imageUrl": "./images/theCanoe.webp"
+  },
+  {
+    "nameWork": "Clouded Charm",
+    "yearCreation": 2013,
+    "size": "12x16 inches",
+    "technique": "pastel",
+    "imageUrl": "./images/cloudedCharm.webp"
+  },
+  {
+    "nameWork": "Ent",
+    "yearCreation": 2016,
+    "size": "12x16 inches",
+    "technique": "pastel",
+    "imageUrl": "./images/ent.webp"
+  },
+  {
+    "nameWork": "Fall",
+    "yearCreation": 2014,
+    "size": "12x16 inches",
+    "technique": "pastel",
+    "imageUrl": "./images/fall.webp"
+  },
+  {
+    "nameWork": "Nocturnal Gaze",
+    "yearCreation": 2012,
+    "size": "14x18 inches",
+    "technique": "pastel",
+    "imageUrl": "./images/nocturnalGaze.webp"
+  },
+  {
+    "nameWork": "Spirit in the Wind",
+    "yearCreation": 2013,
+    "size": "12x16 inches",
+    "technique": "Color Pencil",
+    "imageUrl": "./images/spiritInTheWind.webp"
+  },
+  {
+    "nameWork": "Benjas",
+    "yearCreation": 2022,
+    "size": "12x16 inches",
+    "technique": "Color Pencil",
+    "imageUrl": "./images/benjas.webp"
+  },
+  {
+    "nameWork": "Dub",
+    "yearCreation": 2011,
+    "size": "16x20 inches",
+    "technique": "carbon",
+    "imageUrl": "./images/dub.webp"
+  },
+  {
+    "nameWork": "Malintzin",
+    "yearCreation": 2014,
+    "size": "16x20 inches",
+    "technique": "carbon",
+    "imageUrl": "./images/malintzin.webp"
+  }
+]

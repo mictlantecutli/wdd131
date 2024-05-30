@@ -1,6 +1,7 @@
 :root {
   --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   --main-background: #FAF3E0;
+  --main-background02: #fce7ae;
   --main-text: #424147;
   --headings: #6A0DAD;
   --buttons-links: #4ea6ff;
@@ -114,7 +115,7 @@ header .nav-items.open {
 }
 
 header h1 {
-  font-family: var(--typo-titleseadings);
+  font-family: var(--typo-titlesheadings);
   font-size: 27px;
   padding: 20px;
   color: var(--headings);
@@ -123,6 +124,68 @@ header h1 {
 /*main*/
 main {
   min-height: 80vh;
+}
+
+/*This is the art cards */
+main .container .arts .artCard {
+  margin: 0 auto;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3eef7;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+}
+
+main .container .arts .artCard .imageSection {
+  min-height: 200px;
+}
+
+
+main .container .arts .artCard .infoArt {
+  font-family: var(--typo-btext-paragraphs);
+  padding: 10px;
+  text-align: center;
+}
+
+main .container .arts .artCard .infoArt h2 {
+  padding: 10px;
+  color: var(--main-text);
+  font-family: var(--typo-titlesheadings);
+}
+
+main .container .arts .artCard .infoArt .label {
+  color: var(--main-text);
+  font-weight: 250;
+  font-family: var(--typo-btext-paragraphs);
+  font-style: italic;
+}
+
+main .container .arts .artCard ul {
+  list-style: none;
+
+}
+
+main .container .arts .artCard ul li {
+  color: var(--main-text);
+  min-height: 25px;
+
+}
+
+
+
+main .container .arts .imageSection img {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+
+main .container .arts .imageSection img:hover {
+  box-shadow: 0 0 50px #333;
 }
 
 

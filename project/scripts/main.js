@@ -18,87 +18,44 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
 });
 
-/*Object Art Works*/
-/*Temples Object*/
-const artWorks = [
-  {
-    nameWork: "Deset Eyes",
-    yearCreation: 2018,
-    size: "12x16 inches",
-    technique: "Oil",
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    nameWork: "The Canoe",
-    yearCreation: 2015,
-    size: "18x24 inches",
-    technique: "Oil",
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    nameWork: "Aba Nigeria",
-    yearCreation: "Aba, Nigeria",
-    size: "2005, August, 7",
-    technique: 11500,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    nameWork: "Aba Nigeria",
-    yearCreation: "Aba, Nigeria",
-    size: "2005, August, 7",
-    technique: 11500,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    nameWork: "Aba Nigeria",
-    yearCreation: "Aba, Nigeria",
-    size: "2005, August, 7",
-    technique: 11500,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    nameWork: "Aba Nigeria",
-    yearCreation: "Aba, Nigeria",
-    size: "2005, August, 7",
-    technique: 11500,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    nameWork: "Aba Nigeria",
-    yearCreation: "Aba, Nigeria",
-    size: "2005, August, 7",
-    technique: 11500,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    nameWork: "Aba Nigeria",
-    yearCreation: "Aba, Nigeria",
-    size: "2005, August, 7",
-    technique: 11500,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    nameWork: "Aba Nigeria",
-    yearCreation: "Aba, Nigeria",
-    size: "2005, August, 7",
-    technique: 11500,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-  {
-    nameWork: "Aba Nigeria",
-    yearCreation: "Aba, Nigeria",
-    size: "2005, August, 7",
-    technique: 11500,
-    imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg",
-  },
-];
+/*Get data of art works from a JSON*/
+async function getData() {
+  const response = await fetch("./artsData/artWorks.json");
+  const data = await response.json();
+  return data;
+}
+
+function randomArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+async function getArts() {
+  const artWorks = await getData();
+  const randomArtWorks = randomArray(artWorks).slice(0, 3);
+  const artsHolder = document.querySelector(".cards-arts");
+  const templateCards = randomArtWorks.map(
+    (art) =>
+      `<div class="artCard">
+      <div class="infoArt">
+        <h2>${art.nameWork}</h2>
+        <ul class="dataArt">
+          <li><span class="label">Year: </span>${art.yearCreation}</li>
+          <li><span class="label">Size: </span>${art.size}</li>
+          <li><span class="label">Technique: </span>${art.technique}</li>
+        </ul>
+      </div>
+      <div class="imageSection">
+        <picture>
+          <img src="${art.imageUrl}" alt="${art.nameWork} art" width="400" height="300" loading="lazy"></img>
+        </picture>
+      </div>
+    </div>`
+  );
+  artsHolder.innerHTML = templateCards.join("");
+}
+
+getArts();

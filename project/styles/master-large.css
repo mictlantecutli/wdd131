@@ -40,5 +40,30 @@
     display: none;
   }
 
+  /*Cards Arts*/
+  main .container .arts .cards-arts {
+    margin: 0px 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+  }
+
+  main .container .arts .imageSection img {
+    margin: 0px;
+
+  }
+
+  main .container .arts .artCard {
+    margin-bottom: 0px;
+
+  }
+
+  main .container .arts .artCard h2 {
+    font-size: 18px;
+
+  }
+
+
+
 
 }
