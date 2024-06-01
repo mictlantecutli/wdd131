@@ -1,6 +1,6 @@
 const allLinks = document.querySelectorAll("li a");
 let containerMain = document.querySelector(".container");
-let profileSection = document.querySelector(".profile");
+let profileSection = document.querySelector(".profileCard");
 const pathname = window.location.pathname;
 const pageName = pathname.substring(
   pathname.lastIndexOf("/") + 1,
