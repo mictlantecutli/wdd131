@@ -69,10 +69,19 @@ header .nav-items li a {
 }
 
 header .nav-items li a:hover {
+  cursor: pointer;
   font-weight: 700;
+  background-color: #418eda;
+  color: var(--main-background);
+}
+
+header .nav-items li a.active {
+
   background-color: #397cbf;
   color: var(--main-background);
 }
+
+
 
 header .navbar .title-hamburger {
   display: flex;
@@ -117,8 +126,12 @@ header .nav-items.open {
 header h1 {
   font-family: var(--typo-titlesheadings);
   font-size: 27px;
-  padding: 20px;
-  color: var(--headings);
+  padding: 30px;
+  color: var(--main-text);
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--accents);
+
+
 }
 
 /*main*/
@@ -126,7 +139,73 @@ main {
   min-height: 80vh;
 }
 
+
+
+#title-page {
+  font-family: var(--typo-titlesheadings);
+  font-size: 30px;
+  text-align: center;
+  padding: 1rem;
+  color: var(--headings);
+}
+
+/*Code for artist card*/
+.artistCard {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  margin: 2rem;
+  padding: 1rem;
+
+}
+
+.imageArtist {
+  flex: 0 0 23%;
+}
+
+
+.imageArtist picture {
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.imageArtist img {
+  width: 70%;
+  height: 70%;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+
+}
+
+.infoProfile h2 {
+  font-family: var(--typo-titlesheadings);
+  text-align: center;
+  color: var(--main-text);
+}
+
+.infoProfile p {
+  font-family: var(--typo-btext-paragraphs);
+  font-size: 18px;
+  color: var(--main-text);
+
+}
+
+.interLine {
+  margin: 0px auto;
+  width: 400px;
+  height: 2px;
+  background-color: var(--accents);
+  margin-bottom: 3px;
+}
+
 /*This is the art cards */
+.arts {
+  margin-top: 2rem;
+
+}
+
 main .container .arts .artCard {
   margin: 0 auto;
   max-width: 320px;
@@ -217,5 +296,119 @@ footer p {
 }
 
 footer #lastModified {
+  color: var(--headings);
+}
+
+/*Form Styling*/
+
+
+.formOpinion label {
+  display: block;
+  padding-top: 1rem;
+  color: var(--main-text);
+  font-size: .9rem;
+  font-family: var(--typo-buttons-subtitles-highlights);
+
+}
+
+.formOpinion input[type="text"],
+.formOpinion input[type="email"],
+.formOpinion textarea {
+  display: block;
+  background-color: #eee;
+  border: solid 1px var(--accents);
+  border-radius: 6px;
+  padding: .75rem;
+  color: var(--main-text);
+  width: 100%;
+  max-width: 400px;
+  font-family: var(--typo-btext-paragraphs);
+}
+
+fieldset legend {
+
+  font-size: 20px;
+  text-align: center;
+  font-family: var(--typo-buttons-subtitles-highlights);
+  color: var(--main-text);
+
+}
+
+fieldset {
+  border: none;
+  width: 400px;
+  margin: 0px auto;
+
+}
+
+.formOpinion input[type="submit"] {
+  border: none;
+  background-color: var(--buttons-links);
+  color: var(--main-text);
+  border-radius: 6px;
+  padding: .8rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem 0 2rem 0;
+  box-shadow: 1px 1px 4px var(--box-shadow);
+  appearance: none;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  font-size: 18px;
+  font-family: var(--typo-buttons-subtitles-highlights);
+}
+
+.formOpinion input[type="submit"]:hover {
+  background-color: #418eda;
+  color: var(--main-background02);
+
+}
+
+
+.formOpinion input:required {
+  border-left: solid 8px red;
+}
+
+.formOpinion input:required:valid {
+  border-left: solid 8px green;
+}
+
+/*Opinion uploaded page*/
+.goBack li {
+  list-style: none;
+}
+
+header .goBack li a {
+  background-color: var(--buttons-links);
+  border-radius: 5px;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--main-text);
+  border-bottom: 1px solid #397cbf;
+}
+
+.opinionSaved {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+}
+
+.opinionSaved p {
+  font-size: 27px;
+  font-family: var(--typo-btext-paragraphs);
+  text-align: center;
+  background-color: #f3eef7;
+  border: 1px solid var(--accents);
+  max-width: 700px;
+  margin: 0px auto;
+
+}
+
+.userName,
+.visits {
+  font-family: var(--typo-btext-paragraphs);
+  font-size: 30px;
   color: var(--headings);
 }
