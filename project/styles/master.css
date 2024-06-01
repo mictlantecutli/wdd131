@@ -179,6 +179,10 @@ main {
 
 }
 
+.profile>h2 {
+  display: none;
+}
+
 .infoProfile h2 {
   font-family: var(--typo-titlesheadings);
   text-align: center;
@@ -203,7 +207,12 @@ main {
 /*This is the art cards */
 .arts {
   margin-top: 2rem;
+}
 
+.artsH2 {
+  color: var(--main-text);
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 main .container .arts .artCard {

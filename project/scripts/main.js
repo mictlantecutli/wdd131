@@ -53,7 +53,9 @@ function randomArray(array) {
 
 /**function template cards*/
 function cardHtmlTemplate(objArt) {
-  return `<div class="artCard">
+  return `
+
+  <div class="artCard">
       <div class="infoArt">
         <h2>${objArt.nameWork}</h2>
         <ul class="dataArt">
@@ -73,6 +75,7 @@ function cardHtmlTemplate(objArt) {
 /*Function to render the profile artist section*/
 function artistProfileTemplate(info) {
   return `
+  <h2>Profile</h2>
   <div class="artistCard">
       <div class="infoProfile">
         <h2>${info.name} ${info.lastName}</h2>
@@ -117,13 +120,16 @@ async function getArts(selectedLink) {
 
   if (selectedLink === "home") {
     titlePage.textContent = "Welcome to Benji Art";
-
+    let cardsHeadSection = document.querySelector(".artsH2");
+    cardsHeadSection.style.display = "block";
     const contentProfile = artistProfileTemplate(artistProfile);
     if (profileSection.children.length === 0) {
       profileSection.innerHTML += contentProfile;
     }
     renderArts(randomArtWorks);
   } else if (selectedLink === "newer") {
+    let cardsHeadSection = document.querySelector(".artsH2");
+    cardsHeadSection.style.display = "none";
     if (profileSection.children.length > 0) {
       profileSection.innerHTML = "";
     }
@@ -131,6 +137,8 @@ async function getArts(selectedLink) {
     titlePage.textContent = "Newer Arts";
     renderArts(newArts);
   } else if (selectedLink == "older") {
+    let cardsHeadSection = document.querySelector(".artsH2");
+    cardsHeadSection.style.display = "none";
     if (profileSection.children.length > 0) {
       profileSection.innerHTML = "";
     }
@@ -138,6 +146,8 @@ async function getArts(selectedLink) {
     titlePage.textContent = "Older Arts";
     renderArts(oldArts);
   } else if (selectedLink == "carbon") {
+    let cardsHeadSection = document.querySelector(".artsH2");
+    cardsHeadSection.style.display = "none";
     if (profileSection.children.length > 0) {
       profileSection.innerHTML = "";
     }
@@ -147,6 +157,8 @@ async function getArts(selectedLink) {
     titlePage.textContent = "Carbon Arts";
     renderArts(carbonArts);
   } else if (selectedLink == "contact") {
+    let cardsHeadSection = document.querySelector(".artsH2");
+    cardsHeadSection.style.display = "none";
     if (profileSection.children.length > 0) {
       profileSection.innerHTML = "";
     }
@@ -176,8 +188,10 @@ if (pageName === "index") {
 }
 
 /*DISPLAY DATA FROM LOCAL STORAGE INTO opinionSaved page*/
-let holderNumVisit = document.querySelector(".visits");
-let holderName = document.querySelector(".userName");
-holderNumVisit.textContent = getVisits;
-let user = localStorage.getItem("name");
-holderName.textContent = user;
+if (pageName !== "index") {
+  let holderNumVisit = document.querySelector(".visits");
+  let holderName = document.querySelector(".userName");
+  holderNumVisit.textContent = getVisits;
+  let user = localStorage.getItem("name");
+  holderName.textContent = user;
+}
