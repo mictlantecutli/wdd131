@@ -154,7 +154,7 @@ main {
   display: flex;
   flex-direction: column-reverse;
   gap: 1rem;
-  margin: 2rem;
+  margin: 0px 2rem 2rem 2rem;
   padding: 1rem;
 
 }
@@ -180,7 +180,10 @@ main {
 }
 
 .profile>h2 {
-  display: none;
+  color: var(--main-text);
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 3rem;
 }
 
 .infoProfile h2 {
@@ -211,7 +214,8 @@ main {
 
 .artsH2 {
   color: var(--main-text);
-  text-align: center;
+  text-align: left;
+  margin-left: 3rem;
   margin-bottom: 15px;
 }
 

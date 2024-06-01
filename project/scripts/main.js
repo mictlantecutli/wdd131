@@ -78,7 +78,7 @@ function artistProfileTemplate(info) {
   <h2>Profile</h2>
   <div class="artistCard">
       <div class="infoProfile">
-        <h2>${info.name} ${info.lastName}</h2>
+        
         <p>${info.bio01}</p><br>
         <p>${info.bio02}</p>
 
@@ -176,6 +176,7 @@ async function getArts(selectedLink) {
 }
 
 /**Home is the default page*/
+
 if (pageName === "index") {
   getArts("home");
   const navMenu = document.querySelector(".nav-items");
