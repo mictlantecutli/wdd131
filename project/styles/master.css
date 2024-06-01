@@ -71,7 +71,7 @@ header .nav-items li a {
 header .nav-items li a:hover {
   cursor: pointer;
   font-weight: 700;
-  background-color: #418eda;
+  background-color: #285c90;
   color: var(--main-background);
 }
 
