@@ -75,7 +75,6 @@ function cardHtmlTemplate(objArt) {
 /*Function to render the profile artist section*/
 function artistProfileTemplate(info) {
   return `
-  <h2>Profile</h2>
   <div class="artistCard">
       <div class="infoProfile">
         
@@ -121,7 +120,9 @@ async function getArts(selectedLink) {
   if (selectedLink === "home") {
     titlePage.textContent = "Welcome to Benji Art";
     let cardsHeadSection = document.querySelector(".artsH2");
+    let headProfile = document.querySelector(".profh2");
     cardsHeadSection.style.display = "block";
+    headProfile.style.display = "block";
     const contentProfile = artistProfileTemplate(artistProfile);
     if (profileSection.children.length === 0) {
       profileSection.innerHTML += contentProfile;
@@ -129,7 +130,9 @@ async function getArts(selectedLink) {
     renderArts(randomArtWorks);
   } else if (selectedLink === "newer") {
     let cardsHeadSection = document.querySelector(".artsH2");
+    let headProfile = document.querySelector(".profh2");
     cardsHeadSection.style.display = "none";
+    headProfile.style.display = "none";
     if (profileSection.children.length > 0) {
       profileSection.innerHTML = "";
     }
@@ -138,7 +141,9 @@ async function getArts(selectedLink) {
     renderArts(newArts);
   } else if (selectedLink == "older") {
     let cardsHeadSection = document.querySelector(".artsH2");
+    let headProfile = document.querySelector(".profh2");
     cardsHeadSection.style.display = "none";
+    headProfile.style.display = "none";
     if (profileSection.children.length > 0) {
       profileSection.innerHTML = "";
     }
@@ -147,7 +152,9 @@ async function getArts(selectedLink) {
     renderArts(oldArts);
   } else if (selectedLink == "carbon") {
     let cardsHeadSection = document.querySelector(".artsH2");
+    let headProfile = document.querySelector(".profh2");
     cardsHeadSection.style.display = "none";
+    headProfile.style.display = "none";
     if (profileSection.children.length > 0) {
       profileSection.innerHTML = "";
     }
@@ -158,7 +165,9 @@ async function getArts(selectedLink) {
     renderArts(carbonArts);
   } else if (selectedLink == "contact") {
     let cardsHeadSection = document.querySelector(".artsH2");
+    let headProfile = document.querySelector(".profh2");
     cardsHeadSection.style.display = "none";
+    headProfile.style.display = "none";
     if (profileSection.children.length > 0) {
       profileSection.innerHTML = "";
     }

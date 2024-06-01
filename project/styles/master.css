@@ -179,7 +179,7 @@ main {
 
 }
 
-.profileCard>h2 {
+.profh2 {
   color: var(--main-text);
   text-align: left;
   margin-top: 2rem;
