@@ -177,7 +177,6 @@ async function getArts(selectedLink) {
 
 /**Home is the default page*/
 if (pageName === "index") {
-  let sect = document.querySelector(".my-clase");
   getArts("home");
   const navMenu = document.querySelector(".nav-items");
   navMenu.addEventListener("click", (event) => {
