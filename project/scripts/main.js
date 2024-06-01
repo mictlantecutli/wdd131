@@ -108,8 +108,8 @@ async function getArts(selectedLink) {
     return `<form method="get" action="opinionSaved.html" class="formOpinion">
     <fieldset class="contact">
         <legend>How did my work make you feel?, let's talk</legend>
-        <label for="name">Name*: <input type="text" id="name" name="name" required></label>
-        <label for="email">Email*: <input type="email" id="email" name="email" required></label>                 
+        <label for="name">Name*: <input type="text" id="name" name="name" autocomplete="off" required></label>
+        <label for="email">Email*: <input type="email" id="email" name="email" autocomplete="off" required></label>                 
         <label for="textarea">Message:</label>
         <textarea id="textarea" name="textarea" rows="7"></textarea>  
         <input id="submitCommentBtn" type="submit" value="Send Your Opinion">

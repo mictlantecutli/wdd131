@@ -2,8 +2,8 @@
   --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   --main-background: #FAF3E0;
   --main-background02: #fce7ae;
-  --main-text: #424147;
-  --headings: #6A0DAD;
+  --main-text: #121111;
+  --headings: #540989;
   --buttons-links: #4ea6ff;
   --accents: #D4A373;
   --typo-titlesheadings: "Playfair Display", serif;
@@ -77,7 +77,7 @@ header .nav-items li a:hover {
 
 header .nav-items li a.active {
 
-  background-color: #397cbf;
+  background-color: #1c4064;
   color: var(--main-background);
 }
 
