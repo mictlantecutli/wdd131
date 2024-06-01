@@ -184,6 +184,7 @@ main {
   text-align: left;
   margin-top: 2rem;
   margin-left: 3rem;
+  font-family: var(--typo-buttons-subtitles-highlights);
 }
 
 .infoProfile h2 {
@@ -217,6 +218,7 @@ main {
   text-align: left;
   margin-left: 3rem;
   margin-bottom: 15px;
+  font-family: var(--typo-buttons-subtitles-highlights);
 }
 
 main .container .arts .artCard {
