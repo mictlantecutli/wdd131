@@ -202,7 +202,7 @@ main {
 
 .interLine {
   margin: 0px auto;
-  width: 400px;
+  max-width: 400px;
   height: 2px;
   background-color: var(--accents);
   margin-bottom: 3px;
