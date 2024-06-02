@@ -99,7 +99,7 @@ header .hamburger .bar {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: #FFFFFF;
+  background-color: var(--buttons-links);
   transition: all 0.3s ease-in-out;
 }
 
