@@ -336,7 +336,7 @@ footer #lastModified {
   padding: .75rem;
   color: var(--main-text);
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   font-family: var(--typo-btext-paragraphs);
 }
 
@@ -351,7 +351,8 @@ fieldset legend {
 
 .contact {
   border: none;
-  width: 350px;
+  max-width: 400px;
+  padding: 1rem;
   margin: 0px auto;
 
 }
